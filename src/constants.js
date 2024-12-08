@@ -2,7 +2,7 @@
 export const name = 'CourseForge';
 export const company = 'CourseForge';
 export const websiteURL = 'https://courseforge.xyz/';
-export const serverURL = 'http://localhost:5000';
+export const serverURL = 'https://server.courseforge.xyz/';
 export const logo = 'https://courseforge.xyz/logo192.png';
 export const razorpayEnabled = false;
 export const paypalEnabled = false;
