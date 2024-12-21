@@ -3,7 +3,9 @@ import { Footer } from 'flowbite-react';
 import Logo from '../res/img/logo.svg';
 import DarkLogo from '../res/img/darkLogo.svg';
 import { company, websiteURL } from '../constants';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaInstagram, FaTwitter } from "react-icons/fa";
+import { MdAlternateEmail } from "react-icons/md";
 
 const Footers = () => {
   const storedTheme = sessionStorage.getItem('darkMode');
@@ -31,8 +33,10 @@ const Footers = () => {
             href={websiteURL}
             src={storedTheme === "true" ? DarkLogo : Logo}
           />
+        
           <Footer.LinkGroup>
-            <p className="text-black font-bold mx-4 dark:text-white" onClick={redirectAbout}>
+
+          <p className="text-black font-bold mx-4 dark:text-white" onClick={redirectAbout}>
               About
             </p>
             <p className="text-black  font-bold  mx-4 dark:text-white" onClick={redirectPrivacy}>
@@ -44,7 +48,41 @@ const Footers = () => {
             <p className="text-black  font-bold  mx-4 dark:text-white" onClick={redirectContact}>
               Contact
             </p>
-          </Footer.LinkGroup>
+          <Link
+              className="text-black font-bold mr-1 dark:text-white"
+              to="https://twitter.com/courseforge_xyz" 
+              onClick={(e) => {
+                e.preventDefault();
+                window.open('https://twitter.com/courseforge_xyz', '_blank');
+              }}
+            >
+              <FaTwitter size={25}/>
+            </Link>
+
+           {/*  <Link
+            className="text-black font-bold mr-1 dark:text-white"
+            to="https://instagram.com/blockode.co" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.open('https://instagram.com/blockode.co', '_blank');
+            }}
+            
+            >
+              <FaInstagram size={25}/>
+            </Link> */}
+            <Link
+            className="text-black font-bold mr-1 dark:text-white "
+            to="mailto:support@courseforge.xyz" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.open('mailto:support@courseforge.xyz', '_blank');
+            }}
+             
+            >
+              <MdAlternateEmail size={25}/>
+           </Link>
+           </Footer.LinkGroup>
+         
         </div>
         <Footer.Divider className="border-black dark:border-white" />
         <Footer.Copyright

@@ -17,7 +17,7 @@ const PricingPlan = (props) => {
         <Card className='max-w-sm shadow-none border border-black rounded-none mt-3 px-14 py-5 dark:bg-black dark:border-white'>
             <h5 className="mb-4 text-3xl max-md:text-2xl font-black text-black dark:text-white text-center">{props.data.type}</h5>
             <div className="flex items-baseline text-gray-900 dark:text-white text-center justify-center">
-                <span className="text-3xl max-md:text-2xl font-semibold ">£</span>
+                <span className="text-3xl max-md:text-2xl font-semibold ">$</span>
                 <span className="text-5xl max-md:text-3xl font-extrabold tracking-tight">{props.data.cost}</span>
                 <span className="ml-1 text-xl font-normal text-black dark:text-white">{props.data.time}</span>
             </div>

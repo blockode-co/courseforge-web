@@ -1,7 +1,7 @@
 //BRAND
 export const name = 'CourseForge';
 export const company = 'CourseForge';
-export const websiteURL = 'https://courseforge.xyz/';
+export const websiteURL = 'https://courseforge.xyz';
 export const serverURL = 'https://server.courseforge.xyz';
 export const logo = 'https://courseforge.xyz/logo192.png';
 export const razorpayEnabled = false;
