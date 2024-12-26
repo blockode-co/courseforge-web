@@ -1,6 +1,6 @@
 # CourseForge
 
-![slideOne](https://github.com/user-attachments/assets/f15860df-2f27-40dd-95fb-5aa8951a625a)
+![FireShot Capture 045 - CourseForge - courseforge xyz](https://github.com/user-attachments/assets/8b415639-b234-4e60-b7dc-7bc7eb391105)
 
 CourseForge is a cutting-edge AI-powered platform that transforms course creation and delivery through advanced natural language processing and machine learning. Create comprehensive, engaging courses in minutes, not hours.
 
